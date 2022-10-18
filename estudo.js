@@ -36,6 +36,23 @@ function total(){
     let valor = document.getElementById("val").value;
     let juros = document.getElementById("ju").value;
     let mes = document.getElementById("mes").value;
+    
+    if(!Number(valor)){
+        alert("🚫 Digite um número não uma letra, aderbal")
+        return 
+    }
+    
+    if(!Number(juros)){
+        alert("🚫 Digite um número não uma letra, aderbal")
+        return 
+    }
+    if(!Number(mes)){
+        alert("🚫 Digite um número não uma letra, aderbal")
+        return 
+    }
+
+
+
     let resultado = 0;
     for(let i = 1; i <= mes; i++){
         resultado = valor * (1+(juros/100));
