@@ -6,7 +6,7 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Primeiro H</title>
           <script src="estudo.js"></script>
-          
+          <link rel="stylesheet" href="geral.css">
           
     </head>
     <body>
@@ -14,12 +14,12 @@
             <img src="images.jpg" alt="AD">
             <figcaption>[AD]</figcaption>
           </figure>
-       
-
+        
+        <div class="calc">
          Valor: <input id="val" type="text"><br>
          Juros: <input id="ju" type="text"><br>
          Meses: <input id="mes" type="text"><br>
-         <button onclick="total()">Enviar</button>
+         <button id="BtnCalc" onclick="total()">Enviar</button>
           
          <br> <br> <br> <br> <br>
          <span id="resultado"></span><br>
@@ -31,6 +31,6 @@
           <button onclick="soma()">Soma das Notas</button>
           <button onclick="média()">Média das Notas</button>
           <button onclick="necessário()"> Necessário Para Passar</button>
-          
+        </div>
       </body>
       </html>
