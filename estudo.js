@@ -39,15 +39,21 @@ function total(){
     
     if(!Number(valor)){
         alert("🚫 Digite um número não uma letra, aderbal")
+        document.getElementById("val").value = "";
+        document.getElementById("val").focus ();
         return 
     }
     
     if(!Number(juros)){
         alert("🚫 Digite um número não uma letra, aderbal")
+        document.getElementById("ju").value = "";
+        document.getElementById("ju").focus ();
         return 
     }
     if(!Number(mes)){
         alert("🚫 Digite um número não uma letra, aderbal")
+        document.getElementById("mes").value = "";
+        document.getElementById("mes").focus ();
         return 
     }
 
