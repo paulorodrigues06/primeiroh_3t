@@ -1,1 +1,12 @@
 
+.calc {
+    padding: 10px;
+    background:#f05404
+}
+
+#BtnCalc {
+    width: 50px;
+    padding: 5px;
+    background: #f05404;
+}
+
