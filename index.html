@@ -28,9 +28,21 @@
           Nota 2: <input id="n2" type="text"><br>
           Nota 3: <input id="n3" type="text"><br>
       
-          <button onclick="soma()">Soma das Notas</button>
-          <button onclick="média()">Média das Notas</button>
-          <button onclick="necessário()"> Necessário Para Passar</button>
+          <button id="BtnCalc" onclick="soma()">Soma</button>
+          <button id="BtnCalc" onclick="média()">Média</button>
+          <button id="BtnCalc" onclick="necessário()">Falta</button>
+
+          <br> <br> <br> <br> <br>
+         <span id="resul"></span><br>
+
+        <body>
+            Capital: <input id="valor" type="text"> <br>
+            Juros:<input id="juros" type="text"> <br>
+            
+            Meses: <input id="meses" type="text"> <br>
+           
+            <button id="BtnCalc" onclick="total()"> OK </button>
+           </body>
         </div>
       </body>
       </html>
