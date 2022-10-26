@@ -22,8 +22,9 @@
          <button id="BtnCalc" onclick="total()">Enviar</button>
           
          <br> <br> <br> <br> <br>
+        <div class="spResult">
          <span id="resultado"></span><br>
-      
+        </div>
           Nota 1: <input id="n1" type="text"><br>
           Nota 2: <input id="n2" type="text"><br>
           Nota 3: <input id="n3" type="text"><br>
@@ -36,12 +37,19 @@
          <span id="resul"></span><br>
 
         <body>
-            Capital: <input id="valor" type="text"> <br>
-            Juros:<input id="juros" type="text"> <br>
+          <div class="calculadora">
+
+            <div class="spResultado">
+                <span id="resultade">Total:0,0</span><br>
+            </div>
             
-            Meses: <input id="meses" type="text"> <br>
-           
-            <button id="BtnCalc" onclick="total()"> OK </button>
+            Capital: <input id="valor" type="text"> <br>
+            Taxa de Juros: <input id="juros" type="text"> <br>
+            Quantidade meses: <input id="meses" type="text"> <br>
+            <button id="BtnCalc" onclick="total()">Enviar</button>
+        </div>
+        <div>
+            <span id="mes">Mês a Mês</span>
            </body>
         </div>
       </body>
