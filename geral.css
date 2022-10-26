@@ -1,12 +1,26 @@
 
 .calc {
+    background:#f05404;
+    width: 200px;
     padding: 10px;
-    background:#f05404
+    border-radius: 15px;
 }
 
 #BtnCalc {
     width: 50px;
     padding: 5px;
     background: #f05404;
+
 }
 
+#btnCalc:hover {
+    background: #f05404;
+    color: black;
+    cursor: Grab;
+}
+.spResultado{
+    background: black;
+    color: #ffffff;
+    padding: 4px;
+    margin: 2px;
+}
