@@ -90,40 +90,23 @@ function necessário(){
     document.getElementById("resultado").innerHTML = r;
 }
 
-
 function moeda(atual){
     return atual.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
- }
- 
- function total(){
+}
+function total(){
     let val = document.getElementById("valor").value;
     let ju = document.getElementById("juros").value;
-    let t = document.getElementById("meses").value;
- 
-    if(!Number(val)){
-       alert("O valor deve ser um número.");
-       document.getElementById("valor").value = "";
-       document.getElementById("valor").focus();
-       return 
-    }
-    if(!Number(ju)){
-       alert("O valor dos juros deve ser um número.");
-       document.getElementById("juros").value = "";
-       document.getElementById("juros").focus();
-       return 
-    }
-    if(!Number(t)){
-       alert("A quantidade de meses deve ser um número.");
-       document.getElementById("meses").value = "";
-       document.getElementById("meses").focus();
-       return 
-    }
-    let r = val;
-    for(let m = 1; m <= t; m++){
-       r = (val * (1+ (ju/100)));
-       val = r;
-       document.write("Mês " + m + " valor: " + moeda(r) + "<br>");
-    }
     
-    document.write("O total é " + moeda(r));
- }
+    let t = document.getElementById("meses").value;
+    let resultado = 0;
+    let saida = "";
+    for(let m = 1; m <= t; m++){
+        resultado = (val * ((ju/100)+1));
+        val = resultado;
+         saida += "Mês " + m + ": " + moeda(val) + "<br>";
+       //document.write("Mês " + m + " valor de " + moeda(val) + "<br>");
+    }
+    document.getElementById("mes").innerHTML = saida;
+    document.getElementById("resultado").innerHTML = "Total: " + moeda(resultado);
+    // document.write("O total é de: " + moeda(resultado) );
+}
