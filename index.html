@@ -1,56 +1,74 @@
-      <!DOCTYPE html>
-      <html lang="pt-br">
-      <head>
-          <meta charset="UTF-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Primeiro H</title>
-          <script src="estudo.js"></script>
-          <link rel="stylesheet" href="geral.css">
-          
-    </head>
-    <body>
-        <figure>
-            <img src="images.jpg" alt="AD">
-            <figcaption>[AD]</figcaption>
-          </figure>
-        
-        <div class="calc">
-         Valor: <input id="val" type="text"><br>
-         Juros: <input id="ju" type="text"><br>
-         Meses: <input id="mes" type="text"><br>
-         <button id="BtnCalc" onclick="total()">Enviar</button>
-          
-         <br> <br> <br> <br> <br>
-        <div class="spResult">
-         <span id="resultado"></span><br>
+<!DOCTYPE html>
+<html lang="en">
+
+  <figure>
+    <img src="images.jpg" alt="AD">
+    <figcaption>[AD]</figcaption>
+  </figure>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceiro Trimestre</title>
+    <script src="estudo.js"></script>
+
+    <link rel="stylesheet" href="geral.css">
+
+</head>
+<body>
+    <input type="checkbox" id="calcFin">
+   
+    <div class="calculadora">
+
+        <label for="calcFin">
+          <h3>Financeira</h3>
+    </label>
+       <div class="calcF">
+    <div class="spResultado">
+            <span id="resultado">Total:0,0</span><br>
         </div>
-          Nota 1: <input id="n1" type="text"><br>
-          Nota 2: <input id="n2" type="text"><br>
-          Nota 3: <input id="n3" type="text"><br>
-      
-          <button id="BtnCalc" onclick="soma()">Soma</button>
-          <button id="BtnCalc" onclick="média()">Média</button>
-          <button id="BtnCalc" onclick="necessário()">Falta</button>
 
-          <br> <br> <br> <br> <br>
-         <span id="resul"></span><br>
-
-        <body>
-          <div class="calculadora">
-
-            <div class="spResultado">
-                <span id="resultade">Total:0,0</span><br>
-            </div>
-            
-            Capital: <input id="valor" type="text"> <br>
-            Taxa de Juros: <input id="juros" type="text"> <br>
-            Quantidade meses: <input id="meses" type="text"> <br>
-            <button id="BtnCalc" onclick="total()">Enviar</button>
-        </div>
-        <div>
+        Capital: <input id="valor" type="text"> <br>
+        Taxa de Juros: <input id="juros" type="text"> <br>
+        Quantidade meses: <input id="meses" type="text"> <br>
+        <button id="btnCalc" onclick="total()">Calcular</button>
+        <div class="spMes">
             <span id="mes">Mês a Mês</span>
-           </body>
         </div>
-      </body>
-      </html>
+    </div>
+</div>
+
+<input type="checkbox" id="calcESG">
+<div class="calculadoraRaiz">
+    <label for="calcESG">
+      <h3>Equação <br> Segundo Grau</h3>
+</label>
+   <div class="calcE">
+<div class="spRaiz">
+        <span id="raiz">x1:?? x2:??</span><br>
+    </div>
+
+    a: <input id="a" type="text"> <br>
+    b: <input id="b" type="text"> <br>
+    c: <input id="c" type="text"> <br>
+    <button onclick="calcularRaiz()">Calcular</button>
+    </div>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="calculo.js"></script>
+</head>
+<body>
+    
+</body>
+</html>
