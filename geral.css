@@ -1,0 +1,132 @@
+h3 {
+    margin-left: 30px;
+}
+.calculadora {
+    padding: 20px;
+    background: lemonchiffon;
+    background-size: 100%;
+    margin-top: 10px;
+    border-width: 20px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: peru;
+    box-shadow: 10px 10px 10px 10px #555;
+    font-size: 20px;
+    width: 350px;
+    height: auto;
+    transform: translatey(0px);
+    animation: float 1s ease-in-out infinite;
+}
+@keyframes float {
+ 0% {
+  transform: translatey(0px);
+ }
+ 50% {
+  transform: translatey(5px);
+ }
+ 100% {
+  transform: translatey(0px);
+ }
+}
+.calculadoraRaiz {
+    padding: 20px;
+    background: lemonchiffon;
+    margin-top: 10px;
+    border-width: 20px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: peru;
+    box-shadow: 10px 10px 10px 10px #555;
+    font-size: 20px;
+    width: 350px;
+    height: auto;
+    transform: translatey(0px);
+    animation: float 1s ease-in-out infinite;
+}
+#btnCalc {
+    font-size: 22px;
+    width: 80px;
+    padding: 5px;
+    background: tan;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    transition: 1s background;
+}
+#btnCalc:hover{
+    background: sienna;
+    cursor: pointer;
+}
+ .calculadora input {
+    background: tan;
+    color: aliceblue;
+    border-radius: 5px;
+ }
+ .calculadoraRaiz input {
+    background: tan;
+    color: aliceblue;
+    border-radius: 5px;
+ }
+.spResul {
+    background: tan;
+    color: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+ }
+ .spRaiz {
+    background: tan;
+    color: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+ }
+.listaMensal {
+    margin: 10px;
+    padding: 20px;
+    background: lemonchiffon;
+    border-width: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: peru;
+    font-size: 20px;
+    width: 250px;
+    height: auto;
+}
+#calculaRaiz{
+    font-size: 22px;
+    width: 80px;
+    padding: 5px;
+    background: tan;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    transition: 1s background;
+}
+#calculaRaiz:hover {
+    background: sienna;
+    cursor: pointer;
+}
+.calcF, .calcE {
+    display: none;
+}
+#calcFin, #calcESG {
+    display: none;
+}
+#calcFin:checked + .calculadora .calcF {
+    display: block;
+}
+#calcESG:checked + .calculadoraRaiz .calcE {
+    display: block;
+}
+h3, .calculadora:hover, .calculadoraRaiz:hover {
+    cursor: pointer;
+ }
+.calculadora:hover {
+ transform: translatey(0px);
+    animation: none;
+}
+.calculadoraRaiz:hover {
+ transform: translatey(0px);
+    animation: none;
+}
